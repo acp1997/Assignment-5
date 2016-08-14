@@ -1,0 +1,117 @@
+	*{	box-sizing: border-box;
+		margin: none;
+		padding: none;
+		outline: none;
+		border: 1px solid transparent;
+	}	
+
+	body{
+		display: flex;
+		flex-direction: column;
+		min-width: 650px;
+	}
+
+
+	#head{
+		border: 1px solid rgba(3, 79, 132, 1);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 20px;
+		background-color: rgba(3, 79, 132, 1);
+	}
+	#head .p{
+		margin-right: auto;
+		color: white;
+		font-size: 40px;
+		font-weight: bold; 
+	}
+	#head .a{
+		margin-left: 20px;
+	}
+	a , button
+	{	padding: 10px 35px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		border: 1px solid rgba(3, 79, 132, 1);
+		border-radius: 10px;
+		text-decoration: none;
+		cursor: pointer;
+		background-color: rgba(255,255,255,.9);
+		color: rgba(3, 79, 132, 1);
+		box-shadow: 0 5px 6px rgba(0,0,0,.7);
+		transition: .2s;
+	}
+	a:active , button:active
+	{	box-shadow: 0 3px 4px rgba(0,0,0,.9);}
+
+
+	#body{
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+	}
+	#studTable{
+		width: 60%;
+		margin: 25px 10px 5px;
+	}
+	#studTable table{
+		width: 100%;
+		border-collapse: collapse; 
+		margin: 25px 0;
+	}
+	#studTable td,th{
+		border: 1px solid rgba(0,0,0,.3);
+		text-align: center;
+	}
+	#tab_op{
+		
+		width: 100%;
+		margin: 25px 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+		background-color: rgba(146, 202, 241, .6);
+	}
+	#tab_op div,p{
+		
+		width: 60%;
+		background-color: rgba(255,255,255,.5);
+	}
+	#buttons{
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+	}
+	#buttons button{
+		font-size: 12px;
+		padding: 8px 25px;
+		margin: 0 8px;
+	}
+	#inp{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#inp input
+	{	width: 250px;
+		margin: 6px 20px;
+		font-size: 14px;
+		padding: 6px 14px;
+		border: 1px solid rgba(0,0,0,.5);
+		border-radius: 12px;
+		transition: .5s;
+	}
+	#inp input:focus
+	{	box-shadow: 0 0 8px rgba(3, 79, 132, 1);
+	}
+	#msg{
+		text-align: center;
+		color: rgba(255,0,0,.7);
+		padding: 10px;
+	}
+
+
+	

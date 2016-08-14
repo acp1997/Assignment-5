@@ -1,0 +1,108 @@
+	*{	box-sizing: border-box;
+		margin: none;
+		padding: none;
+		outline: none;
+	}
+
+
+	body
+	{	background-color: rgba(68, 184, 172,.4);
+	}
+	#page 
+	{	width: 60%;
+		min-width: 400px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 20px;
+		border: 2px solid black;
+	}
+
+	
+	h1
+	{	color: #484f4f;
+		/*font-size: 18px;*/
+	}
+	form
+	{	width: 80%;
+		/*min-width: ;*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 10px 0;
+	}
+	.boxes
+	{	width: 100%;
+		margin: 0 0 13px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media screen and (max-width: 875px){
+		form
+		{	padding: 15px 30px;
+		}	
+		.boxes
+		{	justify-content: flex-start;
+		}
+
+	}
+
+
+
+	.boxes label
+	{	border-radius: 6px;
+		margin:8px 30px 8px 0;
+		min-width: 170px;
+		max-width: 220px;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 5px 12px;
+		flex: 1;
+		color: rgba(0,0,0,.7);
+	}
+	/*span
+	{	font-size: 11px;}*/
+	input:not([type='submit']), textarea
+	{	min-width: 200px;
+		max-width: 270px;
+		font-size: 14px;
+		padding: 5px 12px;
+		border: 1px solid black;
+		border-radius: 6px;
+		margin: 9px 0 9px 0;
+		flex: 2;
+		background-color: rgba(255,255,255,.75);
+		transition: .2s;
+	}
+	input:not([type='submit']):focus, textarea:focus
+	{	margin: 5px 0 5px 0;
+		padding: 8px 12px;
+		font-size: 16px;
+		box-shadow: 0 0 15px #034f84;
+	}
+	input:not([type='submit']):invalid, textarea:invalid
+	{	box-shadow: 0 0 10px #c94c4c;
+	}
+
+
+
+	input[type='submit'], a
+	{	margin: 0 0 10px 0;
+		padding: 8px 0;
+		text-align: center;
+		width: 120px;
+		font-size: 16px;
+		font-weight: bold;
+		border: 1px solid rgba(68, 184, 172,1);
+		border-radius: 10px;
+		text-decoration: none;
+		cursor: pointer;
+		background-color: rgba(68, 184, 172,.8);
+		color: white;
+		box-shadow: 0 5px 6px rgba(0,0,0,.7);
+		transition: .2s;
+	}
+	input[type='submit']:active , a:active
+	{	box-shadow: 0 3px 4px rgba(0,0,0,.9);}
